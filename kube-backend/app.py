@@ -5,6 +5,10 @@ app = Flask(__name__)
 def hello_world():
     return 'Hello world from CI/CD from jenkins webhook'
 
+@app.route('/health')
+def hello_world():
+    return 'Status: Healthy :-D'
+
 
 @app.route('/reverser',methods = ['POST'])
 def reverser():
