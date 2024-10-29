@@ -8,7 +8,10 @@ def hello_world():
 @app.route('/health')
 def hello_world():
     return 'Status: Healthy :-D'
-
+    
+@app.route('/route-sync')
+def hello_world():
+    return 'Status: Healthy route sync done :-D'
 
 @app.route('/reverser',methods = ['POST'])
 def reverser():
