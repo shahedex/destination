@@ -13,6 +13,10 @@ def hello_world():
 def hello_world():
     return 'Status: Healthy route sync done :-D'
 
+@app.route('/route-sync-two')
+def hello_world():
+    return 'Status: Healthy route sync done two :-D'
+
 @app.route('/reverser',methods = ['POST'])
 def reverser():
     num = request.get_json().get("num")
